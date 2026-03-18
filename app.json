@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "Carro Católica",
+    "slug": "carro-catolica",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/App_logo.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.carrocatolica.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/App_logo.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "BLUETOOTH",
+        "BLUETOOTH_ADMIN",
+        "BLUETOOTH_CONNECT",
+        "BLUETOOTH_SCAN",
+        "ACCESS_FINE_LOCATION",
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.BLUETOOTH_CONNECT",
+        "android.permission.BLUETOOTH_SCAN",
+        "android.permission.BLUETOOTH_ADVERTISE"
+      ],
+      "package": "com.carrocatolica.app"
+    },
+    "plugins": [
+      [
+        "with-rn-bluetooth-classic",
+        {
+          "peripheralUsageDescription": "Necesario para conectar al carro Arduino vía Bluetooth",
+          "controllerUsageDescription": "Necesario para controlar el carro Arduino vía Bluetooth"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "174d733d-6031-4966-ab0c-4218e786b6d0"
+      }
+    }
+  }
+}
