@@ -2,6 +2,7 @@
   "expo": {
     "name": "Drive",
     "slug": "drive",
+    "description": "App para control/manejo de señales y pulsos mediante conexión App-Bluetooth.",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/App_logo.png",
