@@ -17,7 +17,7 @@ import {
   Card,
   ActivityIndicator,
 } from 'react-native-paper';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 import RNBluetoothClassic from 'react-native-bluetooth-classic';
 
 // --- CONFIGURACIÓN DE COMANDOS ---
@@ -257,8 +257,8 @@ export default function App() {
     >
       <MaterialCommunityIcons
         name={icon}
-        size={50}
-        color={isConnected ? 'white' : '#A0A0A0'}
+        size={60}
+        color={isConnected ? 'white' : '#555555'}
       />
     </TouchableOpacity>
   );
@@ -269,10 +269,11 @@ export default function App() {
       mode="contained"
       onPress={() => sendControlCommand(command, 'press')}
       disabled={!isConnected}
-      style={styles.turnButton}
+      style={[styles.turnButton, { backgroundColor: '#D4AF37' }]}
       contentStyle={{ flexDirection: 'row-reverse' }}
+      labelStyle={{ color: '#000000', fontWeight: 'bold' }}
       icon={({ size, color }) => (
-        <MaterialCommunityIcons name={icon} size={24} color={color} />
+        <MaterialCommunityIcons name={icon} size={24} color="#000000" />
       )}
     >
       {label}
@@ -306,10 +307,10 @@ export default function App() {
   return (
     <PaperProvider>
       <View style={styles.container}>
-        <Title style={styles.headerTitle}>Control de Carro Arduino</Title>
+        <Title style={styles.headerTitle}>Drive</Title>
 
         {/* --- Sección de Conexión --- */}
-        <Card style={styles.card}>
+        <Card style={styles.cardSecondary}>
           <Card.Content style={styles.connectionSection}>
             <View style={styles.statusContainer}>
               <View
@@ -337,6 +338,7 @@ export default function App() {
               style={[
                 styles.connectButton,
                 isConnected ? styles.disconnectBtn : styles.connectBtn,
+                { backgroundColor: isConnected ? '#757575' : '#D32F2F' }
               ]}
             >
               {isConnecting
@@ -388,9 +390,9 @@ export default function App() {
         </View>
 
         {/* --- Sección de Giros 90º --- */}
-        <Card style={styles.card}>
+        <Card style={styles.cardSecondary}>
           <Card.Content>
-            <Title style={styles.subTitle}>Giros Especiales</Title>
+            <Title style={[styles.subTitle, { color: '#FFFFFF' }]}>Giros Especiales</Title>
             <View style={styles.rowSpaced}>
               <TurnButton
                 icon="rotate-left"
@@ -473,6 +475,12 @@ const styles = StyleSheet.create({
     elevation: 4,
     borderRadius: 10,
   },
+  cardSecondary: {
+    marginBottom: 20,
+    elevation: 4,
+    borderRadius: 10,
+    backgroundColor: '#212121', // Fondo oscuro para los recuadros
+  },
   subTitle: {
     fontSize: 18,
     marginBottom: 10,
@@ -496,6 +504,7 @@ const styles = StyleSheet.create({
   statusText: {
     fontSize: 16,
     fontWeight: 'bold',
+    color: '#FFFFFF',
   },
   deviceConnectedName: {
     fontSize: 12,
