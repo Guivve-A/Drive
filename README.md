@@ -1,4 +1,4 @@
-# Drive 🏎️💨
+# Drive
 
 **Drive** es una aplicación móvil de alto rendimiento diseñada para el **control y manejo de señales y pulsos** en tiempo real mediante una conexión robusta **App-Bluetooth**. Optimizada para la interacción con microcontroladores (como Arduino), combina precisión técnica con una interfaz elegante y profesional.
 
@@ -8,17 +8,17 @@
 
 ---
 
-## 🌟 Características Principales
+##  Características Principales
 
-- **🎮 Control Intuitivo:** Interfaz limpia con controles direccionales para manejar el vehículo en tiempo real.
-- **🔄 Giros de Precisión:** Botones dedicados para realizar giros exactos de 90° (Izquierda/Derecha).
-- **📡 Conexión Inteligente:** Sistema de escaneo y conexión robusta con módulos Bluetooth (ej: HC-05).
-- **🎨 Diseño Premium:** Estética "Elegant Dark" con botones dorados y rojos, optimizada para máxima legibilidad y estilo.
-- **🛠️ Arquitectura Nativa:** Configurada para compilación local rápida en Android.
+- ** Control Intuitivo:** Interfaz limpia con controles direccionales para manejar el vehículo en tiempo real.
+- ** Giros de Precisión:** Botones dedicados para realizar giros exactos de 90° (Izquierda/Derecha).
+- ** Conexión Inteligente:** Sistema de escaneo y conexión robusta con módulos Bluetooth (ej: HC-05).
+- ** Diseño Premium:** Estética "Elegant Dark" con botones dorados y rojos, optimizada para máxima legibilidad y estilo.
+- **Arquitectura Nativa:** Configurada para compilación local rápida en Android.
 
 ---
 
-## 🚀 Capacidades y Funcionamiento
+##  Capacidades y Funcionamiento
 
 La app se comunica con el carro Arduino enviando comandos de un solo carácter por el puerto serial:
 
@@ -60,7 +60,7 @@ El APK final se encontrará en: `android/app/build/outputs/apk/release/app-relea
 
 ---
 
-## 🎨 Paleta de Colores "Elegant"
+## Paleta de Colores "Elegant"
 - **Fondo:** Dark Grey / Black (#212121)
 - **Botones de Giro:** Gold (#D4AF37)
 - **Botón Conexión:** Friendly Red (#D32F2F)
@@ -68,5 +68,5 @@ El APK final se encontrará en: `android/app/build/outputs/apk/release/app-relea
 
 ---
 
-## 📄 Créditos
-Desarrollado con ❤️ para el control de hardware open-source.
+##  Créditos
+Desarrollado  para el control de hardware open-source.
